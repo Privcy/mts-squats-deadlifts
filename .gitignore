@@ -1,0 +1,14 @@
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Data and Models (Crucial so you don't hit GitHub size limits)
+*.pkl
+*.ts
+*.csv
+*.txt
+results_*/
+
+# Environments
+.venv/
+env/

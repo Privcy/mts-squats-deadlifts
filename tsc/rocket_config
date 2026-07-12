@@ -1,0 +1,8 @@
+ALGORITHMS = openpose, mediapipe, rtmpose
+INPUT_DATA_PATH = data
+EXERCISE = BS,DS,FS,GS,SD
+SEED_VALUES = 103007
+OUTPUT_PATH = figs
+DATA_TYPE = default
+
+
