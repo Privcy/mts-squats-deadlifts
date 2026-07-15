@@ -6,7 +6,7 @@ This research introduces a framework designed to automate human exercise form as
 
 This study evaluates **three 2D pose estimation models** — OpenPose, MediaPipe, and RTMPose — paired with a **ROCKET-based multivariate time-series classifier** to analyze form correctness across five compound exercise variations: **Back Squat, Front Squat, Dumbbell Squat, Goblet Squat, and Stiff-Leg Deadlift**.
  
-Gym-related injuries are a growing concern — one study reported a 29.9% injury rate among gym members in Saudi Arabia, with squats and deadlifts among the highest-risk compound movements when performed incorrectly. Existing pose-estimation-based feedback systems typically rely on frame-by-frame analysis, which fails to capture the temporal dynamics of a full repetition. BodyMTS addresses this gap by converting joint keypoint sequences into structured multivariate time series and classifying full repetitions with ROCKET + RidgeClassifierCV, rather than judging isolated frames.
+Gym-related injuries are a growing concern. One study reported a 29.9% injury rate among gym members in Saudi Arabia, with squats and deadlifts among the highest-risk compound movements when performed incorrectly. Existing pose-estimation-based feedback systems typically rely on frame-by-frame analysis, which fails to capture the temporal dynamics of a full repetition. BodyMTS addresses this gap by converting joint keypoint sequences into structured multivariate time series and classifying full repetitions with ROCKET + RidgeClassifierCV, rather than judging isolated frames.
  
 **Key findings:**
 - **RTMPose** achieved the highest overall test accuracy (**93.89%**), outperforming OpenPose (87.59%) and MediaPipe (84.84%)
