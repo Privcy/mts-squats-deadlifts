@@ -78,6 +78,27 @@ pip install -r requirements.txt
 - `numpy`, `pandas`
 - `matplotlib` / `plotly` (for the XAI dashboard)
 
+## Usage
+ 
+The classification pipeline is run as a Python module via `tsc.rocket`, configured with the `tsc/rocket_config` file. Exercise variations covered: **BS** (Back Squat), **DS** (Dumbbell Squat), **FS** (Front Squat), **GS** (Goblet Squat), **SD** (Stiff-Leg Deadlift).
+ 
+```bash
+# Run the ROCKET + RidgeClassifierCV pipeline
+python -m tsc.rocket --rocket_config tsc/rocket_config
+```
+ 
+To save the run output to a timestamped log file (PowerShell):
+ 
+```powershell
+python -m tsc.rocket --rocket_config tsc/rocket_config 2>&1 | tee "results_$((Get-Date).ToString('yyyy-MM-dd_HH-mm')).txt"
+```
+ 
+> Note: `tee` here is the PowerShell cmdlet (`Tee-Object` alias), not the Unix `tee`. On macOS/Linux, use the standard `tee` with a `date`-based filename instead, e.g.:
+> ```bash
+> python -m tsc.rocket --rocket_config tsc/rocket_config 2>&1 | tee "results_$(date +%Y-%m-%d_%H-%M).txt"
+> ```
+ 
+
 ## Pipeline Details
  
 | Stage | Description |
