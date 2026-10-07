@@ -4,7 +4,8 @@ This repository contains the official implementation, experimental architecture,
 
 This research introduces a framework designed to automate human exercise form assessment by converting visual joint data into structured temporal signs. With the fusion of 2D Human Pose Estimation and Multivariate Time Series Classification (MTSC), the pipeline accurately evaluates strength and conditioning (S&C) performance, discerning proper executions from specific, injury-inducing biomechanical deviations.
 
-This study evaluates **three 2D pose estimation models** — OpenPose, MediaPipe, and RTMPose — paired with a **ROCKET-based multivariate time-series classifier** to analyze form correctness across five compound exercise variations: **Back Squat, Front Squat, Dumbbell Squat, Goblet Squat, and Stiff-Leg Deadlift**.
+This study evaluates **three 2D pose estimation models** 
+OpenPose, MediaPipe, and RTMPose ; paired with a **ROCKET-based multivariate time-series classifier** to analyze form correctness across five compound exercise variations: **Back Squat, Front Squat, Dumbbell Squat, Goblet Squat, and Stiff-Leg Deadlift**.
  
 Gym-related injuries are a growing concern. One study reported a 29.9% injury rate among gym members in Saudi Arabia, with squats and deadlifts among the highest-risk compound movements when performed incorrectly. Existing pose-estimation-based feedback systems typically rely on frame-by-frame analysis, which fails to capture the temporal dynamics of a full repetition. BodyMTS addresses this gap by converting joint keypoint sequences into structured multivariate time series and classifying full repetitions with ROCKET + RidgeClassifierCV, rather than judging isolated frames.
  
